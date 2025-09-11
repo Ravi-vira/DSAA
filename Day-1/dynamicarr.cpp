@@ -16,8 +16,6 @@ class Dynamicarr{
 
     void insert(int element){
         if(size==capacity){
-            cout<<"Array is full resize array"<<endl;
-        
         int newcapacity=capacity*2;
         int* newarr=new int[newcapacity];
         for(int i=0;i<size;i++){
@@ -25,6 +23,7 @@ class Dynamicarr{
         }   
         delete[] arr;
         arr=newarr;
+        capacity = newcapacity;
     }
 
         arr[size]=element;
