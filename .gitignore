@@ -4,4 +4,4 @@
 *.out
 *.a
 *.json
-.vscode
+.vscode/
